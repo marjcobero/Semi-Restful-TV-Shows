@@ -1,0 +1,12 @@
+body {
+    background-color: lavender;
+    padding: 5px;
+    margin: 5px;
+}
+form {
+    margin: 0 40px;
+}
+.messages {
+    font-weight: 50px;
+    color: #66475e;
+}

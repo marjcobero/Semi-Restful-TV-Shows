@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Read (One) </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        {% load static %}
+        <link rel="stylesheet" href="{% static '/style.css' %}">
+    </head>
+    <body>
+        <h1>TV Show #{{ show.id }} </h1>
+        <h3>Title</h3>
+        <p>{{ show.title }}</p>
+        <h3>Network</h3>
+        <p>{{ show.network }}</p>
+        <h3>Release Date</h3>
+        <p>{{ show.release_date }}</p>
+        <h3>Description</h3>
+        <p>{{ show.description }}</p>
+        <a href="/shows/{{ show.id }}/edit">Edit</a> | <a href="/shows/show.id }}/delete">Delete</a>
+    </body>
+</html>
